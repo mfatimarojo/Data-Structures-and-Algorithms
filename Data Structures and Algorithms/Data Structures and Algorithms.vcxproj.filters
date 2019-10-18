@@ -47,7 +47,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="2012-Feb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
