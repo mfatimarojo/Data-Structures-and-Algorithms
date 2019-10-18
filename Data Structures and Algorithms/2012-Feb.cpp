@@ -61,7 +61,23 @@ int summit(int a[], int N) {
 	return i;
 }
 
+/*
+Problem #6. (4 points) Having an array of integers n>=0 which elements increase strictly, return true if at least one of its elements share the sameç
+value and index
+*/
+bool hasSameValueIndex(int a[], int N) {
+	if (N == 0) return false;
 
+	//Remember, we are assuming that the array given is strictly increasing
+	int i = 0;
+	while (i < N) {
+		if (i < a[i]) return false;
+		if (a[i] == i) return true;
+		i++;
+	}
+
+	return false;
+}
 int main() {
 	int a1[] = {1,2,12,5,3};
 	int N1 = 5;
@@ -84,5 +100,12 @@ int main() {
 	std::cout << "The summit of the array is: " << summit(a3, N3) << std::endl;
 	std::cout << "The summit of the array is: " << summit(a4, N4) << std::endl;
 
-	return 0;
+	// Problem #6
+	int a5[] = { -4,-2, 2, 6, 7 };
+	int a6[] = { 1, 2, 3, 4, 5 };
+	int N5 = 5;
+	if (hasSameValueIndex(a5, N5)) std::cout << "There is at least one element which value is the same as its index\n";
+	else std::cout << "There is no element which value is the same as its index\n";
+	if (hasSameValueIndex(a6, N5)) std::cout << "There is at least one element which value is the same as its index\n";
+	else std::cout << "There is no element which value is the same as its index\n";
 }
