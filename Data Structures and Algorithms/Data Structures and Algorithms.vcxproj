@@ -123,16 +123,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Arbin.h" />
-    <ClInclude Include="cola.h" />
-    <ClInclude Include="colaCircular.h" />
-    <ClInclude Include="dcola.h" />
-    <ClInclude Include="dcolaCircular.h" />
-    <ClInclude Include="diccionario.h" />
-    <ClInclude Include="DiccionarioHash.h" />
-    <ClInclude Include="hash.h" />
-    <ClInclude Include="lista.h" />
-    <ClInclude Include="pila.h" />
+    <ClInclude Include="TADs\Arbin.h" />
+    <ClInclude Include="TADs\cola.h" />
+    <ClInclude Include="TADs\colaCircular.h" />
+    <ClInclude Include="TADs\dcola.h" />
+    <ClInclude Include="TADs\dcolaCircular.h" />
+    <ClInclude Include="TADs\diccionario.h" />
+    <ClInclude Include="TADs\DiccionarioHash.h" />
+    <ClInclude Include="TADs\hash.h" />
+    <ClInclude Include="TADs\lista.h" />
+    <ClInclude Include="TADs\pila.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

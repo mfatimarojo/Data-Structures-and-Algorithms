@@ -15,34 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Arbin.h">
+    <ClInclude Include="TADs\Arbin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cola.h">
+    <ClInclude Include="TADs\cola.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="colaCircular.h">
+    <ClInclude Include="TADs\colaCircular.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="dcola.h">
+    <ClInclude Include="TADs\dcola.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="dcolaCircular.h">
+    <ClInclude Include="TADs\dcolaCircular.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="diccionario.h">
+    <ClInclude Include="TADs\diccionario.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DiccionarioHash.h">
+    <ClInclude Include="TADs\DiccionarioHash.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="hash.h">
+    <ClInclude Include="TADs\hash.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lista.h">
+    <ClInclude Include="TADs\lista.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pila.h">
+    <ClInclude Include="TADs\pila.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
