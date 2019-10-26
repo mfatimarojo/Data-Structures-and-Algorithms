@@ -3,6 +3,7 @@
 
 int longestLength(int a[], int N);
 
+
 int main() {
 
 	// Problem #1
@@ -26,7 +27,7 @@ int main() {
 
 	int a5[] = { -4,-2, 2, 6, 7 };
 	int a6[] = { 1, 2, 3, 4, 5 };
-	int N5 = 5;*/
+	int N5 = 5;
 
 }
 
