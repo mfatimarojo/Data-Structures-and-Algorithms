@@ -65,5 +65,8 @@
     <ClCompile Include="2012-Sept.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2013-Feb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
