@@ -32,7 +32,8 @@ int main() {
 
 /*
 Problem  #1. (4 points) Given an array of integers n>0, return the length of the longest segment with consecutive elements
-						in increasing order <=*/
+			 in increasing order <=
+*/
 int longestLength(int a[], int N) {
 	if (N == 0) return 0;
 	if (N == 1) return 1;
@@ -54,3 +55,7 @@ int longestLength(int a[], int N) {
 
 	return maxLength;
 }
+
+/*
+Problem #2. (2 points) Implement a function in Arbus.h that, given a key K that it is known to be in the tree,
+			returns the next key in increasing order. Use recursion. Do not use other data structures nor Iterator*/

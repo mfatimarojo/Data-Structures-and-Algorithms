@@ -45,12 +45,21 @@
     <ClInclude Include="TADs\pila.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="2012-Jun-Parcial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TADs\Arbus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TADs\Excepciones.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2012-Feb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2012-Jun.cpp">
+    <ClCompile Include="2012-Jun-Final.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

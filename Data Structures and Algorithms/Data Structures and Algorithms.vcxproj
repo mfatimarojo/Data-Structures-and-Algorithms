@@ -123,20 +123,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="2012-Jun-Parcial.h" />
     <ClInclude Include="TADs\Arbin.h" />
+    <ClInclude Include="TADs\Arbus.h" />
     <ClInclude Include="TADs\cola.h" />
     <ClInclude Include="TADs\colaCircular.h" />
     <ClInclude Include="TADs\dcola.h" />
     <ClInclude Include="TADs\dcolaCircular.h" />
     <ClInclude Include="TADs\diccionario.h" />
     <ClInclude Include="TADs\DiccionarioHash.h" />
+    <ClInclude Include="TADs\Excepciones.h" />
     <ClInclude Include="TADs\hash.h" />
     <ClInclude Include="TADs\lista.h" />
     <ClInclude Include="TADs\pila.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2012-Feb.cpp" />
-    <ClCompile Include="2012-Jun.cpp" />
+    <ClCompile Include="2012-Jun-Final.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
