@@ -2,12 +2,17 @@
 #include <stdio.h>
 #include <string>
 #include "TADs/Arbin.h"
+#include "TADs/lista.h"
 
 typedef string Character;
 
 int repMinElement(int a[], int N);
+void insertPort(Lista<string> &l, double& port, double clength);
+void insertStarboard(Lista<string> &l, double& starboard, double clength);
+Lista < string > distributeCars(double N, Lista<double> carsLength);
+void printList(Lista<string> l);
 
-void main() {
+int main() {
 	int a1[] = { 1,2,12,5,3 };
 	int a2[] = { 1,2,3,4,3,2,1 };
 	int a3[] = { 3,2,1 };
@@ -26,6 +31,21 @@ void main() {
 	std::cout << "The minimum number appears " << repMinElement(a4, N4) << " times.\n";
 	std::cout << "The minimum number appears " << repMinElement(a5, N5) << " times.\n";
 	std::cout << "The minimum number appears " << repMinElement(NULL, 0) << " times.\n";
+
+	// Problem #3
+	Lista<double> carsLength;
+	carsLength.pon_final(2.5);
+	carsLength.pon_final(3);
+	carsLength.pon_final(1);
+	carsLength.pon_final(1);
+	carsLength.pon_final(1.5);
+	carsLength.pon_final(0.7);
+	carsLength.pon_final(0.8);
+	Lista< string> l = distributeCars(5, carsLength);
+	std::cout << "The distribution is: ";
+	printList(l);
+
+
 }
 
 /*
@@ -76,3 +96,53 @@ Problem #2	(3 points). There is an Arbin<Character> tree which nodes can be "dra
 
 	return result;
 }*/
+
+/*
+Problem #3	(3.5 points)
+*/
+Lista < string > distributeCars(double N, Lista<double> carsLength) {
+	Lista<string> result;
+	double starboard = N;
+	double port = N;
+
+	Lista<double>::ConstIterator cit = carsLength.cbegin();
+	while (cit != carsLength.cend()) {
+		double clength = cit.elem();
+		double diff1 = port - clength;
+		double diff2 = starboard - clength;
+
+		if (diff1 >= 0 && diff2 >= 0) {
+			if (diff1 <= diff2)
+				insertPort(result, port, clength);
+			else
+				insertStarboard(result, starboard, clength);
+		}
+		else if (diff1 >= 0)
+			insertPort(result, port, clength);
+		else if (diff2 >= 0)
+			insertStarboard(result, starboard, clength);
+
+		cit.next();
+	}
+
+	return result;
+}
+
+void insertPort(Lista<string> &l, double & port, double clength) {
+	l.pon_final("PORT");
+	port -= clength;
+}
+
+void insertStarboard(Lista<string> &l, double &starboard, double clength) {
+	l.pon_final("STARBOARD");
+	starboard -= clength;
+}
+
+void printList(Lista<string> l) {
+	if (l.esVacia()) std::cout << "La lista esta vacia\n";
+	Lista<string>::ConstIterator cit = l.cbegin();
+	while (cit != l.cend()) {
+		std::cout << cit.elem() << " ";
+		cit.next();
+	}
+}
