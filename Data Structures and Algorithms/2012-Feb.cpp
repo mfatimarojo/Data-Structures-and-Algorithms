@@ -79,6 +79,7 @@ bool hasSameValueIndex(int a[], int N) {
 	return false;
 }
 
+
 int main() {
 	int a1[] = {1,2,12,5,3};
 	int N1 = 5;

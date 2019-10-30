@@ -16,19 +16,6 @@ int main() {
 	std::cout << "The length of the longest segment with consecutive elements in increasing order is " << longestLength(a1, N1) << std::endl;
 	std::cout << "The length of the longest segment with consecutive elements in increasing order is " << longestLength(a2, N2) << std::endl;
 	std::cout << "The length of the longest segment with consecutive elements in increasing order is " << longestLength(a3, N3) << std::endl;
-
-	/*int a2[] = { 1,2,3,4,3,2,1 };
-	int a3[] = { 3,2,1 };
-	int a4[] = { 1,2,3,4 };
-	int N2 = 7;
-	int N3 = 3;
-	int N4 = 4;
-
-
-	int a5[] = { -4,-2, 2, 6, 7 };
-	int a6[] = { 1, 2, 3, 4, 5 };
-	int N5 = 5;
-
 }
 
 /*

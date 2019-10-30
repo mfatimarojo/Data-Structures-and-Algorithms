@@ -3,10 +3,12 @@
 
 
 bool hasPattern(int a[], int N);
+int * histogram(int a[], int N);
+void printArray(int a[], int N);
 
 int main() {
 	// Problem #1
-	int a1[] = { 1,2,12,5,3 };
+	int a1[] = { 1,2,3,4,5 };
 	int a2[] = { 0,0,0,0,0,0,0 };
 	int a3[] = { 1,0,0 };
 	int a4[] = { 1,1,1,1 };
@@ -30,6 +32,12 @@ int main() {
 	else std::cout << "The array does not follow the pattern.\n";
 	if (hasPattern(a6, N6)) std::cout << "The array follows the pattern.\n";
 	else std::cout << "The array does not follow the pattern.\n";
+
+	//Problem #2
+	std::cout << "The histogram of ";
+	printArray(a1, N1);
+	std::cout << "is ";
+	printArray(histogram(a1, N1), N1);
 }
 
 /*
@@ -52,3 +60,26 @@ bool hasPattern(int a[], int N) {
 
 	return hasPattern;
 }
+
+
+int * histogram(int a[], int N) {
+	if (N == 0) return NULL;
+	
+	int histogram[5];
+
+	int sum = 0;
+
+	for (int i = 0; i < N; i++) {
+		sum += a[i];
+		histogram[i] += sum;
+	}
+
+	return histogram;
+}
+
+void printArray(int a[], int N) {
+	for (int i = 0; i < N; i++) {
+		std::cout << a[i] << " ";
+	}
+}
+

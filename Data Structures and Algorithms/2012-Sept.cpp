@@ -44,8 +44,6 @@ int main() {
 	Lista< string> l = distributeCars(5, carsLength);
 	std::cout << "The distribution is: ";
 	printList(l);
-
-
 }
 
 /*
